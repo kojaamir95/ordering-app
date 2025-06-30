@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <!-- CSS Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <!-- CSS external -->
+       <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <h1>Koja's Parlor</h1>
+                <p>Where crispiness meets sweetness</p>
+            </div> 
+            <img src="kj.jpeg" class="logo-img">
+        </header>
+        <main class="main-content">
+            <h2 class="h2-menu">Menu</h2>
+            <div class="content-menu-div" id="menu-div"></div>
+            <h2 class="order-title disabled">Your Order</h2>
+            <div class="content-order-div" id="order-div"></div>
+            <hr class="opened disabled">
+            <div class="total-div disabled" id="total-div">
+                <p class="total-para" id="total-para">Total Price</p>
+                <p class="total-price" id="total-price"></p>
+            </div>   
+            <button class="complete-order-btn disabled" id="order-btn">Complete order</button>
+            <form class="payment-form form-closed" id="payment-form">
+                <button class="close-form-btn" id="close-form-btn" type="button">X</button>
+                <h3>Enter your card details</h3>
+                <input type="text" placeholder="john cruz" id="user-name" required>
+                <input type="email" placeholder="john.crus2@gmail.com" id="user-email" required>
+                <input type="text" placeholder="0412345673910" id="card-number" required>
+                <input type="text" placeholder="892" id="card-cvv" required>
+                <button class="pay-btn" type="button" id="pay-btn">Pay</button>
+                <p class="form-slogan">We've <span>You</span> And Your <span>Transfers</span> Covered.</p>
+            </form>
+            <section class="container disabled"></section>
+        </main>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
